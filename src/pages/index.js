@@ -346,7 +346,7 @@ export default function Home() {
                 >
                   {dummyData.map((each) => (
                     <div key={each.id} className="col-property">
-                      <FeaturedItem image={each.image} />
+                      <FeaturedItem key={each.id} image={each.image} />
                     </div>
                   ))}
                 </div>
