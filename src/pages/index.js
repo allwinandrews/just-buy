@@ -48,13 +48,13 @@ export default function Home() {
       {/* <Loader /> */}
       {/* <PrimarySearchAppBar />
       <TitlebarImageList /> */}
-      // Home
+      {/* Home */}
       {/* <!-- Humberger Begin --> */}
       <div className="humberger__menu__overlay"></div>
       <div className="humberger__menu__wrapper">
         <div className="humberger__menu__logo">
           <a href="#">
-            <img src="img/logo.png" alt="" />
+            <img src={require("../styles/assets/img/logo.png")} alt="" />
           </a>
         </div>
         <div className="humberger__menu__cart">
@@ -76,7 +76,7 @@ export default function Home() {
         </div>
         <div className="humberger__menu__widget">
           {/* <div className="header__top__right__language">
-            <img src="img/language.png" alt="" />
+            <img src={require("../styles/assets/img/language.png")} alt="" />
             <div>English</div>
             <span className="arrow_carrot-down"></span>
             <ul>
@@ -185,7 +185,7 @@ export default function Home() {
                     </a>
                   </div>
                   {/* <div className="header__top__right__language"> */}
-                  {/* <img src="img/language.png" alt="" />
+                  {/* <img src={require("../styles/assets/img/language.png")} alt="" />
                     <div>English</div>
                     <span className="arrow_carrot-down"></span>
                     <ul>
@@ -212,7 +212,7 @@ export default function Home() {
             <div className="col-lg-3">
               <div className="header__logo">
                 <a href="./index.html">
-                  <img src="img/logo.png" alt="" />
+                  <img src={require("../styles/assets/img/logo.png")} alt="" />
                 </a>
               </div>
             </div>
@@ -531,12 +531,12 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div className="banner__pic">
-                <img src="img/banner/banner-1.jpg" alt="" />
+                <img src={require("../styles/assets/img/banner/banner-1.jpg")} alt="" />
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div className="banner__pic">
-                <img src="img/banner/banner-2.jpg" alt="" />
+                <img src={require("../styles/assets/img/banner/banner-2.jpg")} alt="" />
               </div>
             </div>
           </div>
@@ -555,7 +555,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-1.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -564,7 +564,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-2.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -573,7 +573,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-3.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -584,7 +584,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-1.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -593,7 +593,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-2.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -602,7 +602,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-3.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -620,7 +620,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-1.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -629,7 +629,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-2.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -638,7 +638,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-3.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -649,7 +649,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-1.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -658,7 +658,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-2.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -667,7 +667,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-3.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -685,7 +685,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-1.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -694,7 +694,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-2.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -703,7 +703,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-3.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -714,7 +714,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-1.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -723,7 +723,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-2.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -732,7 +732,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src="img/latest-product/lp-3.jpg" alt="" />
+                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -762,7 +762,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-sm-6">
               <div className="blog__item">
                 <div className="blog__item__pic">
-                  <img src="img/blog/blog-1.jpg" alt="" />
+                  <img src={require('../styles/assets/img/blog/blog-1.jpg')} alt="" />
                 </div>
                 <div className="blog__item__text">
                   <ul>
@@ -786,7 +786,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-sm-6">
               <div className="blog__item">
                 <div className="blog__item__pic">
-                  <img src="img/blog/blog-2.jpg" alt="" />
+                  <img src={require("../styles/assets/img/blog/blog-2.jpg")} alt="" />
                 </div>
                 <div className="blog__item__text">
                   <ul>
@@ -810,7 +810,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-sm-6">
               <div className="blog__item">
                 <div className="blog__item__pic">
-                  <img src="img/blog/blog-3.jpg" alt="" />
+                  <img src={require("../styles/assets/img/blog/blog-3.jpg")} alt="" />
                 </div>
                 <div className="blog__item__text">
                   <ul>
@@ -844,7 +844,7 @@ export default function Home() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    <img src="img/logo.png" alt="" />
+                    <img src={require("../styles/assets/img/logo.png")} alt="" />
                   </a>
                 </div>
                 <ul>
@@ -934,18 +934,18 @@ export default function Home() {
                 <div className="footer__copyright__text">
                   <p>
                     Copyright &copy;
-                    <script>
+                    {/* <script>
                       document.write(new Date().getFullYear());
                     </script>{" "}
                     All rights reserved | This template is made with{" "}
                     <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
                     <a href="https://colorlib.com" target="_blank">
                       Colorlib
-                    </a>
+                    </a> */}
                   </p>
                 </div>
                 <div className="footer__copyright__payment">
-                  <img src="img/payment-item.png" alt="" />
+                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
                 </div>
               </div>
             </div>
