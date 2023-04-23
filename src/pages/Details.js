@@ -8,7 +8,7 @@ export default function Details() {
       <div className="humberger__menu__wrapper">
         <div className="humberger__menu__logo">
           <a href="">
-            <img src={require("../assets/img/logo.png")} alt="" />
+            <img src={require("../styles/assets/img/logo.png")} alt="" />
           </a>
         </div>
         <div className="humberger__menu__cart">
@@ -30,7 +30,7 @@ export default function Details() {
         </div>
         <div className="humberger__menu__widget">
           <div className="header__top__right__language">
-            <img src={require("../assets/img/language.png")} alt="" />
+            <img src={require("../styles/assets/img/language.png")} alt="" />
             <div>English</div>
             <span className="arrow_carrot-down"></span>
             <ul>
@@ -139,7 +139,7 @@ export default function Details() {
                     </a>
                   </div>
                   <div className="header__top__right__language">
-                    <img src={require("../assets/img/language.png")} alt="" />
+                    <img src={require("../styles/assets/img/language.png")} alt="" />
                     <div>English</div>
                     <span className="arrow_carrot-down"></span>
                     <ul>
@@ -166,7 +166,7 @@ export default function Details() {
             <div className="col-lg-3">
               <div className="header__logo">
                 <a href="./index.html">
-                  <img src={require("../assets/img/logo.png")} alt="" />
+                  <img src={require("../styles/assets/img/logo.png")} alt="" />
                 </a>
               </div>
             </div>
@@ -312,7 +312,7 @@ export default function Details() {
       {/* <!-- Breadcrumb Section Begin --> */}
       <section
         className="breadcrumb-section set-bg"
-        data-setbg="../assets/img/breadcrumb.jpg"
+        data-setbg="../styles/assets/img/breadcrumb.jpg"
       >
         <div className="container">
           <div className="row">
@@ -340,29 +340,29 @@ export default function Details() {
                 <div className="product__details__pic__item">
                   <img
                     className="product__details__pic__item--large"
-                    src={require("../assets/img/product/details/product-details-1.jpg")}
+                    src={require("../styles/assets/img/product/details/product-details-1.jpg")}
                     alt=""
                   />
                 </div>
                 <div className="product__details__pic__slider owl-carousel">
                   <img
-                    data-imgbigurl="../assets/img/product/details/product-details-2.jpg"
-                    src={require("../assets/img/product/details/thumb-1.jpg")}
+                    data-imgbigurl="../styles/assets/img/product/details/product-details-2.jpg"
+                    src={require("../styles/assets/img/product/details/thumb-1.jpg")}
                     alt=""
                   />
                   <img
-                    data-imgbigurl="../assets/img/product/details/product-details-3.jpg"
-                    src={require("../assets/img/product/details/thumb-2.jpg")}
+                    data-imgbigurl="../styles/assets/img/product/details/product-details-3.jpg"
+                    src={require("../styles/assets/img/product/details/thumb-2.jpg")}
                     alt=""
                   />
                   <img
-                    data-imgbigurl="../assets/img/product/details/product-details-5.jpg"
-                    src={require("../assets/img/product/details/thumb-3.jpg")}
+                    data-imgbigurl="../styles/assets/img/product/details/product-details-5.jpg"
+                    src={require("../styles/assets/img/product/details/thumb-3.jpg")}
                     alt=""
                   />
                   <img
-                    data-imgbigurl="../assets/img/product/details/product-details-4.jpg"
-                    src={require("../assets/img/product/details/thumb-4.jpg")}
+                    data-imgbigurl="../styles/assets/img/product/details/product-details-4.jpg"
+                    src={require("../styles/assets/img/product/details/thumb-4.jpg")}
                     alt=""
                   />
                 </div>
@@ -582,7 +582,7 @@ export default function Details() {
               <div className="product__item">
                 <div
                   className="product__item__pic set-bg"
-                  data-setbg="../assets/img/product/product-1.jpg"
+                  data-setbg="../styles/assets/img/product/product-1.jpg"
                 >
                   <ul className="product__item__pic__hover">
                     <li>
@@ -614,7 +614,7 @@ export default function Details() {
               <div className="product__item">
                 <div
                   className="product__item__pic set-bg"
-                  data-setbg="../assets/img/product/product-2.jpg"
+                  data-setbg="../styles/assets/img/product/product-2.jpg"
                 >
                   <ul className="product__item__pic__hover">
                     <li>
@@ -646,7 +646,7 @@ export default function Details() {
               <div className="product__item">
                 <div
                   className="product__item__pic set-bg"
-                  data-setbg="../assets/img/product/product-3.jpg"
+                  data-setbg="../styles/assets/img/product/product-3.jpg"
                 >
                   <ul className="product__item__pic__hover">
                     <li>
@@ -678,7 +678,7 @@ export default function Details() {
               <div className="product__item">
                 <div
                   className="product__item__pic set-bg"
-                  data-setbg="../assets/img/product/product-7.jpg"
+                  data-setbg="../styles/assets/img/product/product-7.jpg"
                 >
                   <ul className="product__item__pic__hover">
                     <li>
@@ -719,7 +719,7 @@ export default function Details() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    <img src={require("../assets/img/logo.png")} alt="" />
+                    <img src={require("../styles/assets/img/logo.png")} alt="" />
                   </a>
                 </div>
                 <ul>
@@ -822,7 +822,7 @@ export default function Details() {
                   </p>
                 </div>
                 <div className="footer__copyright__payment">
-                  <img src={require("../assets/img/payment-item.png")} alt="" />
+                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
                 </div>
               </div>
             </div>

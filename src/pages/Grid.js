@@ -8,7 +8,7 @@ export default function Grid() {
       <div className="humberger__menu__wrapper">
         <div className="humberger__menu__logo">
           <a href="">
-            <img src={require("../assets/img/logo.png")} alt="" />
+            <img src={require("../styles/assets/img/logo.png")} alt="" />
           </a>
         </div>
         <div className="humberger__menu__cart">
@@ -30,7 +30,7 @@ export default function Grid() {
         </div>
         <div className="humberger__menu__widget">
           <div className="header__top__right__language">
-            <img src={require("../assets/img/language.png")} alt="" />
+            <img src={require("../styles/assets/img/language.png")} alt="" />
             <div>English</div>
             <span className="arrow_carrot-down"></span>
             <ul>
@@ -139,7 +139,7 @@ export default function Grid() {
                     </a>
                   </div>
                   <div className="header__top__right__language">
-                    <img src={require("../assets/img/language.png")} alt="" />
+                    <img src={require("../styles/assets/img/language.png")} alt="" />
                     <div>English</div>
                     <span className="arrow_carrot-down"></span>
                     <ul>
@@ -166,7 +166,7 @@ export default function Grid() {
             <div className="col-lg-3">
               <div className="header__logo">
                 <a href="./index.html">
-                  <img src={require("../assets/img/logo.png")} alt="" />
+                  <img src={require("../styles/assets/img/logo.png")} alt="" />
                 </a>
               </div>
             </div>
@@ -313,7 +313,7 @@ export default function Grid() {
       {/* <section
         className="breadcrumb-section set-bg"
         style={{
-          backgroundImage: `url(${require("../assets/img/breadcrumb.jpg")})`,
+          backgroundImage: `url(${require("../styles/assets/img/breadcrumb.jpg")})`,
         }}
       >
         <div className="container">
@@ -473,7 +473,7 @@ export default function Grid() {
                         <a href="" className="latest-product__item">
                           <div className="latest-product__item__pic">
                             <img
-                              src={require("../assets/img/latest-product/lp-1.jpg")}
+                              src={require("../styles/assets/img/latest-product/lp-1.jpg")}
                               alt=""
                             />
                           </div>
@@ -485,7 +485,7 @@ export default function Grid() {
                         <a href="" className="latest-product__item">
                           <div className="latest-product__item__pic">
                             <img
-                              src={require("../assets/img/latest-product/lp-2.jpg")}
+                              src={require("../styles/assets/img/latest-product/lp-2.jpg")}
                               alt=""
                             />
                           </div>
@@ -497,7 +497,7 @@ export default function Grid() {
                         <a href="" className="latest-product__item">
                           <div className="latest-product__item__pic">
                             <img
-                              src={require("../assets/img/latest-product/lp-3.jpg")}
+                              src={require("../styles/assets/img/latest-product/lp-3.jpg")}
                               alt=""
                             />
                           </div>
@@ -511,7 +511,7 @@ export default function Grid() {
                         <a href="" className="latest-product__item">
                           <div className="latest-product__item__pic">
                             <img
-                              src={require("../assets/img/latest-product/lp-1.jpg")}
+                              src={require("../styles/assets/img/latest-product/lp-1.jpg")}
                               alt=""
                             />
                           </div>
@@ -523,7 +523,7 @@ export default function Grid() {
                         <a href="" className="latest-product__item">
                           <div className="latest-product__item__pic">
                             <img
-                              src={require("../assets/img/latest-product/lp-2.jpg")}
+                              src={require("../styles/assets/img/latest-product/lp-2.jpg")}
                               alt=""
                             />
                           </div>
@@ -535,7 +535,7 @@ export default function Grid() {
                         <a href="" className="latest-product__item">
                           <div className="latest-product__item__pic">
                             <img
-                              src={require("../assets/img/latest-product/lp-3.jpg")}
+                              src={require("../styles/assets/img/latest-product/lp-3.jpg")}
                               alt=""
                             />
                           </div>
@@ -562,7 +562,7 @@ export default function Grid() {
                         <div
                           className="product__discount__item__pic set-bg"
                           style={{
-                            backgroundImage: `url(${require("../assets/img/product/discount/pd-1.jpg")})`,
+                            backgroundImage: `url(${require("../styles/assets/img/product/discount/pd-1.jpg")})`,
                           }}
                         >
                           <div className="product__discount__percent">-20%</div>
@@ -600,7 +600,7 @@ export default function Grid() {
                         <div
                           className="product__discount__item__pic set-bg"
                           style={{
-                            backgroundImage: `url(${require("../assets/img/product/discount/pd-2.jpg")})`,
+                            backgroundImage: `url(${require("../styles/assets/img/product/discount/pd-2.jpg")})`,
                           }}
                         >
                           <div className="product__discount__percent">-20%</div>
@@ -638,7 +638,7 @@ export default function Grid() {
                         <div
                           className="product__discount__item__pic set-bg"
                           style={{
-                            backgroundImage: `url(${require("../assets/img/product/discount/pd-3.jpg")})`,
+                            backgroundImage: `url(${require("../styles/assets/img/product/discount/pd-3.jpg")})`,
                           }}
                         >
                           <div className="product__discount__percent">-20%</div>
@@ -676,7 +676,7 @@ export default function Grid() {
                         <div
                           className="product__discount__item__pic set-bg"
                           style={{
-                            backgroundImage: `url(${require("../assets/img/product/discount/pd-4.jpg")})`,
+                            backgroundImage: `url(${require("../styles/assets/img/product/discount/pd-4.jpg")})`,
                           }}
                         >
                           <div className="product__discount__percent">-20%</div>
@@ -714,7 +714,7 @@ export default function Grid() {
                         <div
                           className="product__discount__item__pic set-bg"
                           style={{
-                            backgroundImage: `url(${require("../assets/img/product/discount/pd-5.jpg")})`,
+                            backgroundImage: `url(${require("../styles/assets/img/product/discount/pd-5.jpg")})`,
                           }}
                         >
                           <div className="product__discount__percent">-20%</div>
@@ -752,7 +752,7 @@ export default function Grid() {
                         <div
                           className="product__discount__item__pic set-bg"
                           style={{
-                            backgroundImage: `url(${require("../assets/img/product/discount/pd-6.jpg")})`,
+                            backgroundImage: `url(${require("../styles/assets/img/product/discount/pd-6.jpg")})`,
                           }}
                         >
                           <div className="product__discount__percent">-20%</div>
@@ -828,7 +828,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-1.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-1.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -862,7 +862,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-2.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-2.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -896,7 +896,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-3.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-3.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -930,7 +930,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-4.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-4.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -964,7 +964,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-5.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-5.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -998,7 +998,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-6.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-6.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -1032,7 +1032,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-7.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-7.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -1066,7 +1066,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-8.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-8.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -1100,7 +1100,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-9.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-9.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -1134,7 +1134,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-10.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-10.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -1168,7 +1168,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-11.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-11.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -1202,7 +1202,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../assets/img/product/product-12.jpg")})`,
+                        backgroundImage: `url(${require("../styles/assets/img/product/product-12.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -1254,7 +1254,7 @@ export default function Grid() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    <img src={require("../assets/img/logo.png")} alt="" />
+                    <img src={require("../styles/assets/img/logo.png")} alt="" />
                   </a>
                 </div>
                 <ul>
@@ -1357,7 +1357,7 @@ export default function Grid() {
                   </p>
                 </div>
                 <div className="footer__copyright__payment">
-                  <img src={require("../assets/img/payment-item.png")} alt="" />
+                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
                 </div>
               </div>
             </div>

@@ -8,7 +8,7 @@ export default function Contact() {
       <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
           <a href="#">
-            <img src={require("../assets/img/logo.png")} alt="" />
+            <img src={require("../styles/assets/img/logo.png")} alt="" />
           </a>
         </div>
         <div class="humberger__menu__cart">
@@ -30,7 +30,7 @@ export default function Contact() {
         </div>
         <div class="humberger__menu__widget">
           <div class="header__top__right__language">
-            <img src={require("../assets/img/language.png")} alt="" />
+            <img src={require("../styles/assets/img/language.png")} alt="" />
             <div>English</div>
             <span class="arrow_carrot-down"></span>
             <ul>
@@ -139,7 +139,7 @@ export default function Contact() {
                     </a>
                   </div>
                   <div class="header__top__right__language">
-                    <img src={require("../assets/img/language.png")} alt="" />
+                    <img src={require("../styles/assets/img/language.png")} alt="" />
                     <div>English</div>
                     <span class="arrow_carrot-down"></span>
                     <ul>
@@ -166,7 +166,7 @@ export default function Contact() {
             <div class="col-lg-3">
               <div class="header__logo">
                 <a href="./index.html">
-                  <img src={require("../assets/img/logo.png")} alt="" />
+                  <img src={require("../styles/assets/img/logo.png")} alt="" />
                 </a>
               </div>
             </div>
@@ -429,7 +429,7 @@ export default function Contact() {
               <div class="footer__about">
                 <div class="footer__about__logo">
                   <a href="./index.html">
-                    <img src={require("../assets/img/logo.png")} alt="" />
+                    <img src={require("../styles/assets/img/logo.png")} alt="" />
                   </a>
                 </div>
                 <ul>
@@ -532,7 +532,7 @@ export default function Contact() {
                   </p>
                 </div>
                 <div class="footer__copyright__payment">
-                  <img src={require("../assets/img/payment-item.png")} alt="" />
+                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
                 </div>
               </div>
             </div>
