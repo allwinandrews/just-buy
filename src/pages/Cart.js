@@ -8,7 +8,7 @@ export default function Cart() {
       <div className="humberger__menu__wrapper">
         <div className="humberger__menu__logo">
           <a href="">
-            <img src={require("../assets/img/logo.png")} alt="" />
+            <img src={require("../styles/assets/img/logo.png")} alt="" />
           </a>
         </div>
         <div className="humberger__menu__cart">
@@ -30,7 +30,7 @@ export default function Cart() {
         </div>
         <div className="humberger__menu__widget">
           <div className="header__top__right__language">
-            <img src={require("../assets/img/language.png")} alt="" />
+            <img src={require("../styles/assets/img/language.png")} alt="" />
             <div>English</div>
             <span className="arrow_carrot-down"></span>
             <ul>
@@ -139,7 +139,7 @@ export default function Cart() {
                     </a>
                   </div>
                   <div className="header__top__right__language">
-                    <img src={require("../assets/img/language.png")} alt="" />
+                    <img src={require("../styles/assets/img/language.png")} alt="" />
                     <div>English</div>
                     <span className="arrow_carrot-down"></span>
                     <ul>
@@ -166,7 +166,7 @@ export default function Cart() {
             <div className="col-lg-3">
               <div className="header__logo">
                 <a href="./index.html">
-                  <img src={require("../assets/img/logo.png")} alt="" />
+                  <img src={require("../styles/assets/img/logo.png")} alt="" />
                 </a>
               </div>
             </div>
@@ -313,7 +313,7 @@ export default function Cart() {
       <section
         className="breadcrumb-section set-bg"
         style={{
-          backgroundImage: `url(${require("../assets/img/breadcrumb.jpg")})`,
+          backgroundImage: `url(${require("../styles/assets/img/breadcrumb.jpg")})`,
         }}
       >
         <div className="container">
@@ -352,7 +352,7 @@ export default function Cart() {
                     <tr>
                       <td className="shoping__cart__item">
                         <img
-                          src={require("../assets/img/cart/cart-1.jpg")}
+                          src={require("../styles/assets/img/cart/cart-1.jpg")}
                           alt=""
                         />
                         <h5>Vegetable’s Package</h5>
@@ -373,7 +373,7 @@ export default function Cart() {
                     <tr>
                       <td className="shoping__cart__item">
                         <img
-                          src={require("../assets/img/cart/cart-2.jpg")}
+                          src={require("../styles/assets/img/cart/cart-2.jpg")}
                           alt=""
                         />
                         <h5>Fresh Garden Vegetable</h5>
@@ -394,7 +394,7 @@ export default function Cart() {
                     <tr>
                       <td className="shoping__cart__item">
                         <img
-                          src={require("../assets/img/cart/cart-3.jpg")}
+                          src={require("../styles/assets/img/cart/cart-3.jpg")}
                           alt=""
                         />
                         <h5>Organic Bananas</h5>
@@ -472,7 +472,7 @@ export default function Cart() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    <img src={require("../assets/img/logo.png")} alt="" />
+                    <img src={require("../styles/assets/img/logo.png")} alt="" />
                   </a>
                 </div>
                 <ul>
@@ -575,7 +575,7 @@ export default function Cart() {
                   </p>
                 </div>
                 <div className="footer__copyright__payment">
-                  <img src={require("../assets/img/payment-item.png")} alt="" />
+                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
                 </div>
               </div>
             </div>
