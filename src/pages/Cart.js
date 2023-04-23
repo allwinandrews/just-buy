@@ -463,6 +463,7 @@ export default function Cart() {
       </section>
       {/* <!-- Shoping Cart Section End --> */}
 
+
       {/* <!-- Footer Section Begin --> */}
       <footer className="footer spad">
         <div className="container">
