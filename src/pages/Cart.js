@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Cart() {
   return (
-    <body>
+    <>
       {/* <!-- Humberger Begin --> */}
       <div className="humberger__menu__overlay"></div>
       <div className="humberger__menu__wrapper">
@@ -361,7 +361,7 @@ export default function Cart() {
                       <td className="shoping__cart__quantity">
                         <div className="quantity">
                           <div className="pro-qty">
-                            <input type="text" value="1" />
+                            <input type="text" value="1" onChange={(e) => { console.log(e) }} />
                           </div>
                         </div>
                       </td>
@@ -382,7 +382,7 @@ export default function Cart() {
                       <td className="shoping__cart__quantity">
                         <div className="quantity">
                           <div className="pro-qty">
-                            <input type="text" value="1" />
+                            <input type="text" value="1" onChange={(e) => { console.log(e) }} />
                           </div>
                         </div>
                       </td>
@@ -403,7 +403,7 @@ export default function Cart() {
                       <td className="shoping__cart__quantity">
                         <div className="quantity">
                           <div className="pro-qty">
-                            <input type="text" value="1" />
+                            <input type="text" value="1" onChange={(e) => { console.log(e) }} />
                           </div>
                         </div>
                       </td>
@@ -583,6 +583,6 @@ export default function Cart() {
         </div>
       </footer>
       {/* <!-- Footer Section End --> */}
-    </body>
+    </>
   );
 }
