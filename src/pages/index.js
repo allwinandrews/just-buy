@@ -12,6 +12,7 @@ import { TbApple } from "react-icons/tb";
 import { TbEggs } from "react-icons/tb";
 
 import { TbSnowflake } from "react-icons/tb";
+import { TbSearch } from "react-icons/tb";
 
 // import { TbEggs } from "react-icons/tb";
 
@@ -25,9 +26,19 @@ export default function Home() {
     axios.get(`https://fakestoreapi.com/products/`).then((res) => {
       const persons = res.data;
       setdummyData(persons);
-      console.log(dummyData.length);
+      console.log(dummyData);
     });
   }, []);
+
+
+  // const { message, setMessage } = useContext(Message_data);
+
+  // function sendData() {
+  //   var data = document.getElementById("context_id").value;
+  //   setMessage(data);
+  // }
+
+  // var router = useRouter();
 
   // const dummyData = async () => {
   //   const response = await fetch(`https://fakestoreapi.com/products/1`);
@@ -38,23 +49,18 @@ export default function Home() {
   //   }
   // };
 
-  useEffect(() => {
-    // dummyData()
-  }, []);
-
   return (
     <>
       {/* <!-- Page Preloder --> */}
       {/* <Loader /> */}
       {/* <PrimarySearchAppBar />
       <TitlebarImageList /> */}
-      {/* Home */}
       {/* <!-- Humberger Begin --> */}
       <div className="humberger__menu__overlay"></div>
       <div className="humberger__menu__wrapper">
         <div className="humberger__menu__logo">
           <a href="#">
-            <img src={require("../styles/assets/img/logo.png")} alt="" />
+            <img src="img/logo.png" alt="" />
           </a>
         </div>
         <div className="humberger__menu__cart">
@@ -76,7 +82,7 @@ export default function Home() {
         </div>
         <div className="humberger__menu__widget">
           {/* <div className="header__top__right__language">
-            <img src={require("../styles/assets/img/language.png")} alt="" />
+            <img src="img/language.png" alt="" />
             <div>English</div>
             <span className="arrow_carrot-down"></span>
             <ul>
@@ -135,12 +141,12 @@ export default function Home() {
           <a href="#">
             <i className="fa fa-twitter"></i>
           </a>
-          <a href="#">
+          {/* <a href="#">
             <i className="fa fa-linkedin"></i>
           </a>
           <a href="#">
             <i className="fa fa-pinterest-p"></i>
-          </a>
+          </a> */}
         </div>
         <div className="humberger__menu__contact">
           <ul>
@@ -162,7 +168,7 @@ export default function Home() {
                 <div className="header__top__left">
                   <ul>
                     <li>
-                      <i className="fa fa-envelope"></i> hello@colorlib.com
+                      <i className="fa fa-envelope"></i> admin@just-buy.com
                     </li>
                     <li>Free Shipping for all Order of $99</li>
                   </ul>
@@ -177,15 +183,15 @@ export default function Home() {
                     <a href="#">
                       <i className="fa fa-twitter"></i>
                     </a>
-                    <a href="#">
+                    {/* <a href="#">
                       <i className="fa fa-linkedin"></i>
                     </a>
                     <a href="#">
                       <i className="fa fa-pinterest-p"></i>
-                    </a>
+                    </a> */}
                   </div>
                   {/* <div className="header__top__right__language"> */}
-                  {/* <img src={require("../styles/assets/img/language.png")} alt="" />
+                  {/* <img src="img/language.png" alt="" />
                     <div>English</div>
                     <span className="arrow_carrot-down"></span>
                     <ul>
@@ -212,7 +218,7 @@ export default function Home() {
             <div className="col-lg-3">
               <div className="header__logo">
                 <a href="./index.html">
-                  <img src={require("../styles/assets/img/logo.png")} alt="" />
+                  <img src="img/logo.png" alt="" />
                 </a>
               </div>
             </div>
@@ -299,9 +305,7 @@ export default function Home() {
                     { id: "6", name: "Fruits & Vegetables", icon: <TbApple /> },
                   ].map((each) => (
                     <li key={each.id}>
-                      <div>
-                        {each.icon}
-                      </div>
+                      <div>{each.icon}</div>
                       <a href="#">{each.name}</a>
                     </li>
                   ))}
@@ -318,7 +322,7 @@ export default function Home() {
                     </div> */}
                     <input type="text" placeholder="Search for Products" />
                     <button type="submit" className="site-btn">
-                      SEARCH
+                      <TbSearch size={"24px"} />
                     </button>
                   </form>
                 </div>
@@ -335,34 +339,304 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="hero__item set-bg">
-                <div
-                  className="row"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    justifyContent: "center"
-                  }}
-                >
-                  {dummyData.map((each) => (
-                    <div key={each.id} className="col-property">
-                      <FeaturedItem key={each.id} image={each.image} />
-                    </div>
-                  ))}
+              <div style={{border:"1px solid #ebebeb",borderRadius:"12px",padding:"10px"}}>
+                <div className="">
+                  {/* <div className="product__discount">
+                <div className="section-title product__discount__title">
+                  <h2>Sale Off</h2>
                 </div>
-
-                {/* <span>Space for content</span> */}
-
-                {/* <div className="hero__text">
-                  <h2>
-                    Vegetable <br />
-                    100% Organic
-                  </h2>
-                  <p>Free Pickup and Delivery Available</p>
-                  <a href="#" className="primary-btn">
-                    SHOP NOW
-                  </a>
-                </div> */}
+                <div className="row">
+                  <div className="product__discount__slider owl-carousel">
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
+                        <div
+                          className="product__discount__item__pic set-bg"
+                          style={{
+                            backgroundImage: `url(${require("../assets/img/product/discount/pd-1.jpg")})`,
+                          }}
+                        >
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
+                            <li>
+                              <a href="">
+                                <i className="fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-retweet"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="product__discount__item__text">
+                          <span>Dried Fruit</span>
+                          <h5>
+                            <a href="">Raisin’n’nuts</a>
+                          </h5>
+                          <div className="product__item__price">
+                            $30.00 <span>$36.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
+                        <div
+                          className="product__discount__item__pic set-bg"
+                          style={{
+                            backgroundImage: `url(${require("../assets/img/product/discount/pd-2.jpg")})`,
+                          }}
+                        >
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
+                            <li>
+                              <a href="">
+                                <i className="fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-retweet"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="product__discount__item__text">
+                          <span>Vegetables</span>
+                          <h5>
+                            <a href="">Vegetables’package</a>
+                          </h5>
+                          <div className="product__item__price">
+                            $30.00 <span>$36.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
+                        <div
+                          className="product__discount__item__pic set-bg"
+                          style={{
+                            backgroundImage: `url(${require("../assets/img/product/discount/pd-3.jpg")})`,
+                          }}
+                        >
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
+                            <li>
+                              <a href="">
+                                <i className="fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-retweet"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="product__discount__item__text">
+                          <span>Dried Fruit</span>
+                          <h5>
+                            <a href="">Mixed Fruitss</a>
+                          </h5>
+                          <div className="product__item__price">
+                            $30.00 <span>$36.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
+                        <div
+                          className="product__discount__item__pic set-bg"
+                          style={{
+                            backgroundImage: `url(${require("../assets/img/product/discount/pd-4.jpg")})`,
+                          }}
+                        >
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
+                            <li>
+                              <a href="">
+                                <i className="fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-retweet"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="product__discount__item__text">
+                          <span>Dried Fruit</span>
+                          <h5>
+                            <a href="">Raisin’n’nuts</a>
+                          </h5>
+                          <div className="product__item__price">
+                            $30.00 <span>$36.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
+                        <div
+                          className="product__discount__item__pic set-bg"
+                          style={{
+                            backgroundImage: `url(${require("../assets/img/product/discount/pd-5.jpg")})`,
+                          }}
+                        >
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
+                            <li>
+                              <a href="">
+                                <i className="fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-retweet"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="product__discount__item__text">
+                          <span>Dried Fruit</span>
+                          <h5>
+                            <a href="">Raisin’n’nuts</a>
+                          </h5>
+                          <div className="product__item__price">
+                            $30.00 <span>$36.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div className="product__discount__item">
+                        <div
+                          className="product__discount__item__pic set-bg"
+                          style={{
+                            backgroundImage: `url(${require("../assets/img/product/discount/pd-6.jpg")})`,
+                          }}
+                        >
+                          <div className="product__discount__percent">-20%</div>
+                          <ul className="product__item__pic__hover">
+                            <li>
+                              <a href="">
+                                <i className="fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-retweet"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                <i className="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="product__discount__item__text">
+                          <span>Dried Fruit</span>
+                          <h5>
+                            <a href="">Raisin’n’nuts</a>
+                          </h5>
+                          <div className="product__item__price">
+                            $30.00 <span>$36.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> */}
+                  <div style={{width:"100%",padding:"20px"}}>
+                    <div className="row">
+                      <div className="col-lg-4 col-md-5">
+                        <div className="filter__sort">
+                          <span>Sort By</span>
+                          <select>
+                            <option value="0">Default</option>
+                            <option value="0">Default</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div className="col-lg-4 col-md-4">
+                        <div className="filter__found">
+                          <h6>
+                            <span>16</span> Products found
+                          </h6>
+                        </div>
+                      </div>
+                      <div className="col-lg-4 col-md-3">
+                        <div className="filter__option">
+                          <span className="icon_grid-2x2"></span>
+                          <span className="icon_ul"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="row"
+                      style={{
+                        width: "900px",
+                        "overflow-y": "scroll",
+                        position: "relative",
+                        height: "500px",
+                      }}
+                    >
+                      {dummyData.map((value) => (
+                        <div
+                          style={{
+                            width: "200px",
+                            display: "flex",
+                            justifyContent: "center",
+                            padding: "5px",
+                          }}
+                        >
+                          <FeaturedItem data={value} />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="product__pagination">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">
+                      <i className="fa fa-long-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -526,17 +800,17 @@ export default function Home() {
       {/* <!-- Featured Section End -->
 
     <!-- Banner Begin --> */}
-      <div className="banner">
+      {/* <div className="banner">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div className="banner__pic">
-                <img src={require("../styles/assets/img/banner/banner-1.jpg")} alt="" />
+                <img src="img/banner/banner-1.jpg" alt="" />
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div className="banner__pic">
-                <img src={require("../styles/assets/img/banner/banner-2.jpg")} alt="" />
+                <img src="img/banner/banner-2.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -545,7 +819,7 @@ export default function Home() {
       {/* <!-- Banner End -->
 
     <!-- Latest Product Section Begin --> */}
-      <section className="latest-product spad">
+      {/* <section className="latest-product spad">
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6">
@@ -555,7 +829,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
+                        <img src="img/latest-product/lp-1.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -564,7 +838,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
+                        <img src="img/latest-product/lp-2.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -573,7 +847,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
+                        <img src="img/latest-product/lp-3.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -584,7 +858,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
+                        <img src="img/latest-product/lp-1.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -593,7 +867,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
+                        <img src="img/latest-product/lp-2.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -602,7 +876,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
+                        <img src="img/latest-product/lp-3.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -620,7 +894,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
+                        <img src="img/latest-product/lp-1.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -629,7 +903,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
+                        <img src="img/latest-product/lp-2.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -638,7 +912,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
+                        <img src="img/latest-product/lp-3.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -649,7 +923,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
+                        <img src="img/latest-product/lp-1.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -658,7 +932,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
+                        <img src="img/latest-product/lp-2.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -667,7 +941,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
+                        <img src="img/latest-product/lp-3.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -685,7 +959,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
+                        <img src="img/latest-product/lp-1.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -694,7 +968,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
+                        <img src="img/latest-product/lp-2.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -703,7 +977,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
+                        <img src="img/latest-product/lp-3.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -714,7 +988,7 @@ export default function Home() {
                   <div className="latest-prdouct__slider__item">
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-1.jpg")} alt="" />
+                        <img src="img/latest-product/lp-1.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -723,7 +997,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-2.jpg")} alt="" />
+                        <img src="img/latest-product/lp-2.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -732,7 +1006,7 @@ export default function Home() {
                     </a>
                     <a href="#" className="latest-product__item">
                       <div className="latest-product__item__pic">
-                        <img src={require("../styles/assets/img/latest-product/lp-3.jpg")} alt="" />
+                        <img src="img/latest-product/lp-3.jpg" alt="" />
                       </div>
                       <div className="latest-product__item__text">
                         <h6>Crab Pool Security</h6>
@@ -745,11 +1019,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section>  */}
       {/* <!-- Latest Product Section End -->
 
     <!-- Blog Section Begin --> */}
-      <section className="from-blog spad">
+      {/* <section className="from-blog spad">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -762,7 +1036,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-sm-6">
               <div className="blog__item">
                 <div className="blog__item__pic">
-                  <img src={require('../styles/assets/img/blog/blog-1.jpg')} alt="" />
+                  <img src="img/blog/blog-1.jpg" alt="" />
                 </div>
                 <div className="blog__item__text">
                   <ul>
@@ -786,7 +1060,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-sm-6">
               <div className="blog__item">
                 <div className="blog__item__pic">
-                  <img src={require("../styles/assets/img/blog/blog-2.jpg")} alt="" />
+                  <img src="img/blog/blog-2.jpg" alt="" />
                 </div>
                 <div className="blog__item__text">
                   <ul>
@@ -810,7 +1084,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-4 col-sm-6">
               <div className="blog__item">
                 <div className="blog__item__pic">
-                  <img src={require("../styles/assets/img/blog/blog-3.jpg")} alt="" />
+                  <img src="img/blog/blog-3.jpg" alt="" />
                 </div>
                 <div className="blog__item__text">
                   <ul>
@@ -833,7 +1107,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- Blog Section End -->
 
     <!-- Footer Section Begin --> */}
@@ -844,7 +1118,7 @@ export default function Home() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    <img src={require("../styles/assets/img/logo.png")} alt="" />
+                    <img src="img/logo.png" alt="" />
                   </a>
                 </div>
                 <ul>
@@ -930,24 +1204,24 @@ export default function Home() {
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <div className="footer__copyright">
+              {/* <div className="footer__copyright">
                 <div className="footer__copyright__text">
                   <p>
                     Copyright &copy;
-                    {/* <script>
+                    <script>
                       document.write(new Date().getFullYear());
                     </script>{" "}
                     All rights reserved | This template is made with{" "}
                     <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
                     <a href="https://colorlib.com" target="_blank">
                       Colorlib
-                    </a> */}
+                    </a>
                   </p>
                 </div>
                 <div className="footer__copyright__payment">
-                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
+                  <img src="img/payment-item.png" alt="" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

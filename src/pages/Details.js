@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { useRouter } from "next/router";
 
-export default function Details() {
+export default function Details({ productTile }) {
+  const router = useRouter();
+  const data = router.query;
+  console.log(data);
   return (
     <>
       {/* <!-- Humberger Begin --> */}
@@ -8,7 +12,7 @@ export default function Details() {
       <div className="humberger__menu__wrapper">
         <div className="humberger__menu__logo">
           <a href="">
-            <img src={require("../styles/assets/img/logo.png")} alt="" />
+            {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
           </a>
         </div>
         <div className="humberger__menu__cart">
@@ -30,7 +34,7 @@ export default function Details() {
         </div>
         <div className="humberger__menu__widget">
           <div className="header__top__right__language">
-            <img src={require("../styles/assets/img/language.png")} alt="" />
+            {/* <img src={require("../assets/img/language.png")} alt="" /> */}
             <div>English</div>
             <span className="arrow_carrot-down"></span>
             <ul>
@@ -108,7 +112,7 @@ export default function Details() {
       {/* <!-- Humberger End --> */}
 
       {/* <!-- Header Section Begin --> */}
-      <header className="header">
+      {/* <header className="header">
         <div className="header__top">
           <div className="container">
             <div className="row">
@@ -139,7 +143,7 @@ export default function Details() {
                     </a>
                   </div>
                   <div className="header__top__right__language">
-                    <img src={require("../styles/assets/img/language.png")} alt="" />
+                    // <img src={require("../assets/img/language.png")} alt="" />
                     <div>English</div>
                     <span className="arrow_carrot-down"></span>
                     <ul>
@@ -166,7 +170,7 @@ export default function Details() {
             <div className="col-lg-3">
               <div className="header__logo">
                 <a href="./index.html">
-                  <img src={require("../styles/assets/img/logo.png")} alt="" />
+                  // <img src={require("../assets/img/logo.png")} alt="" />
                 </a>
               </div>
             </div>
@@ -229,7 +233,7 @@ export default function Details() {
             <i className="fa fa-bars"></i>
           </div>
         </div>
-      </header>
+      </header> */}
       {/* <!-- Header Section End --> */}
 
       {/* <!-- Hero Section Begin --> */}
@@ -310,7 +314,7 @@ export default function Details() {
       {/* <!-- Hero Section End --> */}
 
       {/* <!-- Breadcrumb Section Begin --> */}
-      <section
+      {/* <section
         className="breadcrumb-section set-bg"
         data-setbg="../styles/assets/img/breadcrumb.jpg"
       >
@@ -328,7 +332,7 @@ export default function Details() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- Breadcrumb Section End --> */}
 
       {/* <!-- Product Details Section Begin --> */}
@@ -340,29 +344,30 @@ export default function Details() {
                 <div className="product__details__pic__item">
                   <img
                     className="product__details__pic__item--large"
-                    src={require("../styles/assets/img/product/details/product-details-1.jpg")}
+                    src={data.image}
+                    style={{width:"100%"}}
                     alt=""
                   />
                 </div>
                 <div className="product__details__pic__slider owl-carousel">
                   <img
-                    data-imgbigurl="../styles/assets/img/product/details/product-details-2.jpg"
-                    src={require("../styles/assets/img/product/details/thumb-1.jpg")}
+                    data-imgbigurl="../assets/img/product/details/product-details-2.jpg"
+                    // src={require("../assets/img/product/details/thumb-1.jpg")}
                     alt=""
                   />
                   <img
-                    data-imgbigurl="../styles/assets/img/product/details/product-details-3.jpg"
-                    src={require("../styles/assets/img/product/details/thumb-2.jpg")}
+                    data-imgbigurl="../assets/img/product/details/product-details-3.jpg"
+                    // src={require("../assets/img/product/details/thumb-2.jpg")}
                     alt=""
                   />
                   <img
-                    data-imgbigurl="../styles/assets/img/product/details/product-details-5.jpg"
-                    src={require("../styles/assets/img/product/details/thumb-3.jpg")}
+                    data-imgbigurl="../assets/img/product/details/product-details-5.jpg"
+                    // src={require("../assets/img/product/details/thumb-3.jpg")}
                     alt=""
                   />
                   <img
-                    data-imgbigurl="../styles/assets/img/product/details/product-details-4.jpg"
-                    src={require("../styles/assets/img/product/details/thumb-4.jpg")}
+                    data-imgbigurl="../assets/img/product/details/product-details-4.jpg"
+                    // src={require("../assets/img/product/details/thumb-4.jpg")}
                     alt=""
                   />
                 </div>
@@ -370,7 +375,7 @@ export default function Details() {
             </div>
             <div className="col-lg-6 col-md-6">
               <div className="product__details__text">
-                <h3>Vetgetable’s Package</h3>
+                <h3>{data.title}</h3>
                 <div className="product__details__rating">
                   <i className="fa fa-star"></i>
                   <i className="fa fa-star"></i>
@@ -379,13 +384,9 @@ export default function Details() {
                   <i className="fa fa-star-half-o"></i>
                   <span>(18 reviews)</span>
                 </div>
-                <div className="product__details__price">$50.00</div>
+                <div className="product__details__price">${data.price} </div>
                 <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  Vestibulum ac diam sit amet quam vehicula elementum sed sit
-                  amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit
-                  amet quam vehicula elementum sed sit amet dui. Proin eget
-                  tortor risus.
+                  {data.description}
                 </p>
                 <div className="product__details__quantity">
                   <div className="quantity">
@@ -395,7 +396,7 @@ export default function Details() {
                   </div>
                 </div>
                 <a href="" className="primary-btn">
-                  ADD TO CARD
+                  ADD TO CART
                 </a>
                 <a href="" className="heart-icon">
                   <span className="icon_heart_alt"></span>
@@ -719,7 +720,7 @@ export default function Details() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    <img src={require("../styles/assets/img/logo.png")} alt="" />
+                    {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
                   </a>
                 </div>
                 <ul>
@@ -806,23 +807,8 @@ export default function Details() {
           <div className="row">
             <div className="col-lg-12">
               <div className="footer__copyright">
-                <div className="footer__copyright__text">
-                  <p>
-                    {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
-                    Copyright &copy;
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>{" "}
-                    All rights reserved | This template is made with{" "}
-                    <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
-                    <a href="https://colorlib.com" target="_blank">
-                      Colorlib
-                    </a>
-                    {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
-                  </p>
-                </div>
                 <div className="footer__copyright__payment">
-                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
+                  {/* <img src={require("../assets/img/payment-item.png")} alt="" /> */}
                 </div>
               </div>
             </div>
