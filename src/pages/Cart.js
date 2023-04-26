@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function Cart() {
   return (
     <>
@@ -8,7 +7,7 @@ export default function Cart() {
       <div className="humberger__menu__wrapper">
         <div className="humberger__menu__logo">
           <a href="">
-            <img src={require("../styles/assets/img/logo.png")} alt="" />
+            {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
           </a>
         </div>
         <div className="humberger__menu__cart">
@@ -30,7 +29,7 @@ export default function Cart() {
         </div>
         <div className="humberger__menu__widget">
           <div className="header__top__right__language">
-            <img src={require("../styles/assets/img/language.png")} alt="" />
+            {/* <img src={require("../assets/img/language.png")} alt="" /> */}
             <div>English</div>
             <span className="arrow_carrot-down"></span>
             <ul>
@@ -108,7 +107,7 @@ export default function Cart() {
       {/* <!-- Humberger End --> */}
 
       {/* <!-- Header Section Begin --> */}
-      <header className="header">
+      {/* <header className="header">
         <div className="header__top">
           <div className="container">
             <div className="row">
@@ -229,7 +228,7 @@ export default function Cart() {
             <i className="fa fa-bars"></i>
           </div>
         </div>
-      </header>
+      </header> */}
       {/* <!-- Header Section End --> */}
 
       {/* <!-- Hero Section Begin --> */}
@@ -310,7 +309,7 @@ export default function Cart() {
       {/* <!-- Hero Section End --> */}
 
       {/* <!-- Breadcrumb Section Begin --> */}
-      <section
+      {/* <section
         className="breadcrumb-section set-bg"
         style={{
           backgroundImage: `url(${require("../styles/assets/img/breadcrumb.jpg")})`,
@@ -329,7 +328,7 @@ export default function Cart() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- Breadcrumb Section End --> */}
 
       {/* <!-- Shoping Cart Section Begin --> */}
@@ -352,7 +351,7 @@ export default function Cart() {
                     <tr>
                       <td className="shoping__cart__item">
                         <img
-                          src={require("../styles/assets/img/cart/cart-1.jpg")}
+                          // src={require("../assets/img/cart/cart-1.jpg")}
                           alt=""
                         />
                         <h5>Vegetable’s Package</h5>
@@ -373,7 +372,7 @@ export default function Cart() {
                     <tr>
                       <td className="shoping__cart__item">
                         <img
-                          src={require("../styles/assets/img/cart/cart-2.jpg")}
+                          // src={require("../assets/img/cart/cart-2.jpg")}
                           alt=""
                         />
                         <h5>Fresh Garden Vegetable</h5>
@@ -394,7 +393,7 @@ export default function Cart() {
                     <tr>
                       <td className="shoping__cart__item">
                         <img
-                          src={require("../styles/assets/img/cart/cart-3.jpg")}
+                          // src={require("../assets/img/cart/cart-3.jpg")}
                           alt=""
                         />
                         <h5>Organic Bananas</h5>
@@ -472,7 +471,7 @@ export default function Cart() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    <img src={require("../styles/assets/img/logo.png")} alt="" />
+                    {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
                   </a>
                 </div>
                 <ul>
@@ -575,7 +574,7 @@ export default function Cart() {
                   </p>
                 </div>
                 <div className="footer__copyright__payment">
-                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
+                  {/* <img src={require("../assets/img/payment-item.png")} alt="" /> */}
                 </div>
               </div>
             </div>

@@ -8,7 +8,7 @@ export default function Grid() {
       <div className="humberger__menu__wrapper">
         <div className="humberger__menu__logo">
           <a href="">
-            <img src={require("../styles/assets/img/logo.png")} alt="" />
+            {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
           </a>
         </div>
         <div className="humberger__menu__cart">
@@ -30,7 +30,7 @@ export default function Grid() {
         </div>
         <div className="humberger__menu__widget">
           <div className="header__top__right__language">
-            <img src={require("../styles/assets/img/language.png")} alt="" />
+            {/* <img src={require("../assets/img/language.png")} alt="" /> */}
             <div>English</div>
             <span className="arrow_carrot-down"></span>
             <ul>
@@ -139,7 +139,7 @@ export default function Grid() {
                     </a>
                   </div>
                   <div className="header__top__right__language">
-                    <img src={require("../styles/assets/img/language.png")} alt="" />
+                    {/* <img src={require("../assets/img/language.png")} alt="" /> */}
                     <div>English</div>
                     <span className="arrow_carrot-down"></span>
                     <ul>
@@ -166,7 +166,7 @@ export default function Grid() {
             <div className="col-lg-3">
               <div className="header__logo">
                 <a href="./index.html">
-                  <img src={require("../styles/assets/img/logo.png")} alt="" />
+                  {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
                 </a>
               </div>
             </div>
@@ -828,7 +828,42 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-1.jpg")})`,
+                        // backgroundImage: `url(${require("http://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg")})`,
+                      }}
+                    >
+                      <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"></img>
+                      <ul className="product__item__pic__hover">
+                        <li>
+                          <a href="">
+                            <i className="fa fa-heart"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i className="fa fa-retweet"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i className="fa fa-shopping-cart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="product__item__text">
+                      <h6>
+                        <a href="">Crab Pool Security</a>
+                      </h6>
+                      <h5>$30.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="product__item">
+                    <div
+                      className="product__item__pic set-bg"
+                      style={{
+                        // backgroundImage: `url(${require("../assets/img/product/product-2.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -862,7 +897,7 @@ export default function Grid() {
                     <div
                       className="product__item__pic set-bg"
                       style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-2.jpg")})`,
+                        // backgroundImage: `url(${require("../assets/img/product/product-3.jpg")})`,
                       }}
                     >
                       <ul className="product__item__pic__hover">
@@ -891,346 +926,7 @@ export default function Grid() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-3.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-4.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-5.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-6.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-7.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-8.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-9.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-10.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-11.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="product__item">
-                    <div
-                      className="product__item__pic set-bg"
-                      style={{
-                        backgroundImage: `url(${require("../styles/assets/img/product/product-12.jpg")})`,
-                      }}
-                    >
-                      <ul className="product__item__pic__hover">
-                        <li>
-                          <a href="">
-                            <i className="fa fa-heart"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-retweet"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i className="fa fa-shopping-cart"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="product__item__text">
-                      <h6>
-                        <a href="">Crab Pool Security</a>
-                      </h6>
-                      <h5>$30.00</h5>
-                    </div>
-                  </div>
-                </div>
+               
               </div>
               <div className="product__pagination">
                 <a href="">1</a>
@@ -1254,7 +950,7 @@ export default function Grid() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    <img src={require("../styles/assets/img/logo.png")} alt="" />
+                    {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
                   </a>
                 </div>
                 <ul>
@@ -1342,22 +1038,10 @@ export default function Grid() {
             <div className="col-lg-12">
               <div className="footer__copyright">
                 <div className="footer__copyright__text">
-                  <p>
-                    {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
-                    Copyright &copy;
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>{" "}
-                    All rights reserved | This template is made with{" "}
-                    <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
-                    <a href="https://colorlib.com" target="_blank">
-                      Colorlib
-                    </a>
-                    {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
-                  </p>
+                  {/*  */}
                 </div>
                 <div className="footer__copyright__payment">
-                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
+                  {/* <img src={require("../assets/img/payment-item.png")} alt="" /> */}
                 </div>
               </div>
             </div>

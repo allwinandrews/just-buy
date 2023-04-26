@@ -8,7 +8,7 @@ export default function Contact() {
       <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
           <a href="#">
-            <img src={require("../styles/assets/img/logo.png")} alt="" />
+            {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
           </a>
         </div>
         <div class="humberger__menu__cart">
@@ -30,7 +30,7 @@ export default function Contact() {
         </div>
         <div class="humberger__menu__widget">
           <div class="header__top__right__language">
-            <img src={require("../styles/assets/img/language.png")} alt="" />
+            {/* <img src={require("../assets/img/language.png")} alt="" /> */}
             <div>English</div>
             <span class="arrow_carrot-down"></span>
             <ul>
@@ -108,7 +108,7 @@ export default function Contact() {
       {/* <!-- Humberger End --> */}
 
       {/* <!-- Header Section Begin --> */}
-      <header class="header">
+      {/* <header class="header">
         <div class="header__top">
           <div class="container">
             <div class="row">
@@ -229,7 +229,7 @@ export default function Contact() {
             <i class="fa fa-bars"></i>
           </div>
         </div>
-      </header>
+      </header> */}
       {/* <!-- Header Section End --> */}
 
       {/* <!-- Hero Section Begin --> */}
@@ -310,7 +310,7 @@ export default function Contact() {
       {/* <!-- Hero Section End --> */}
 
       {/* <!-- Breadcrumb Section Begin --> */}
-      <section
+      {/* <section
         class="breadcrumb-section set-bg"
         data-setbg="img/breadcrumb.jpg"
       >
@@ -327,7 +327,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!-- Breadcrumb Section End --> */}
 
       {/* <!-- Contact Section Begin --> */}
@@ -429,7 +429,7 @@ export default function Contact() {
               <div class="footer__about">
                 <div class="footer__about__logo">
                   <a href="./index.html">
-                    <img src={require("../styles/assets/img/logo.png")} alt="" />
+                    {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
                   </a>
                 </div>
                 <ul>
@@ -517,8 +517,7 @@ export default function Contact() {
             <div class="col-lg-12">
               <div class="footer__copyright">
                 <div class="footer__copyright__text">
-                  <p>
-                    {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
+                  {/* <p>
                     Copyright &copy;
                     <script>
                       document.write(new Date().getFullYear());
@@ -528,11 +527,10 @@ export default function Contact() {
                     <a href="https://colorlib.com" target="_blank">
                       Colorlib
                     </a>
-                    {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
-                  </p>
+                  </p> */}
                 </div>
                 <div class="footer__copyright__payment">
-                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
+                  {/* <img src={require("../assets/img/payment-item.png")} alt="" /> */}
                 </div>
               </div>
             </div>
