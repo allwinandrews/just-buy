@@ -161,7 +161,7 @@ export default function Checkout() {
             </div>
           </div>
         </div>
-        <div className="container">
+        {/* <div className="container">
           <div className="row">
             <div className="col-lg-3">
               <div className="header__logo">
@@ -228,7 +228,7 @@ export default function Checkout() {
           <div className="humberger__open">
             <i className="fa fa-bars"></i>
           </div>
-        </div>
+        </div> */}
       </header>
       {/* <!-- Header Section End --> */}
 
@@ -311,21 +311,21 @@ export default function Checkout() {
 
       {/* <!-- Breadcrumb Section Begin --> */}
       <section
-        className="breadcrumb-section set-bg"
+        className=""
         style={{
           // backgroundImage: `url(${require("../assets/img/breadcrumb.jpg")})`,
         }}
       >
         <div className="container">
           <div className="row">
-            <div className="col-lg-12 text-center">
-              <div className="breadcrumb__text">
+            <div className="col-lg-12 text-center"> 
+              {/* <div className="breadcrumb__text">
                 <h2>Checkout</h2>
                 <div className="breadcrumb__option">
                   <a href="./index.html">Home</a>
                   <span>Checkout</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -334,15 +334,15 @@ export default function Checkout() {
 
       {/* <!-- Checkout Section Begin --> */}
       <section className="checkout spad">
-        <div className="container">
-          <div className="row">
+        <div cl assName="container">
+          {/* <div className="row">
             <div className="col-lg-12">
               <h6>
                 <span className="icon_tag_alt"></span> Have a coupon?{" "}
                 <a href="">Click here</a> to enter your code
               </h6>
             </div>
-          </div>
+          </div> */}
           <div className="checkout__form">
             <h4>Billing Details</h4>
             <form action="#">
@@ -613,19 +613,7 @@ export default function Checkout() {
             <div className="col-lg-12">
               <div className="footer__copyright">
                 <div className="footer__copyright__text">
-                  <p>
-                    {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
-                    Copyright &copy;
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>{" "}
-                    All rights reserved | This template is made with{" "}
-                    <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
-                    <a href="https://colorlib.com" target="_blank">
-                      Colorlib
-                    </a>
-                    {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
-                  </p>
+
                 </div>
                 <div className="footer__copyright__payment">
                   {/* <img src={require("../assets/img/payment-item.png")} alt="" /> */}
