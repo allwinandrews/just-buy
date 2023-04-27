@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Details from "../../pages/details";
 import Link from "next/link";
 
 const myLoader = ({ src, width, quality }) => {
