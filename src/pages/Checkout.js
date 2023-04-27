@@ -8,7 +8,7 @@ export default function Checkout() {
       <div className="humberger__menu__wrapper">
         <div className="humberger__menu__logo">
           <a href="">
-            {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
+            <img src={require("../styles/assets/img/logo.png")} alt="" />
           </a>
         </div>
         <div className="humberger__menu__cart">
@@ -30,7 +30,7 @@ export default function Checkout() {
         </div>
         <div className="humberger__menu__widget">
           <div className="header__top__right__language">
-            {/* <img src={require("../assets/img/language.png")} alt="" /> */}
+            <img src={require("../styles/assets/img/language.png")} alt="" />
             <div>English</div>
             <span className="arrow_carrot-down"></span>
             <ul>
@@ -139,7 +139,7 @@ export default function Checkout() {
                     </a>
                   </div>
                   <div className="header__top__right__language">
-                    {/* <img src={require("../assets/img/language.png")} alt="" /> */}
+                    <img src={require("../styles/assets/img/language.png")} alt="" />
                     <div>English</div>
                     <span className="arrow_carrot-down"></span>
                     <ul>
@@ -166,7 +166,7 @@ export default function Checkout() {
             <div className="col-lg-3">
               <div className="header__logo">
                 <a href="./index.html">
-                  {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
+                  <img src={require("../styles/assets/img/logo.png")} alt="" />
                 </a>
               </div>
             </div>
@@ -313,7 +313,7 @@ export default function Checkout() {
       <section
         className=""
         style={{
-          // backgroundImage: `url(${require("../assets/img/breadcrumb.jpg")})`,
+          backgroundImage: `url(${require("../styles/assets/img/breadcrumb.jpg")})`,
         }}
       >
         <div className="container">
@@ -525,7 +525,7 @@ export default function Checkout() {
               <div className="footer__about">
                 <div className="footer__about__logo">
                   <a href="./index.html">
-                    {/* <img src={require("../assets/img/logo.png")} alt="" /> */}
+                    <img src={require("../styles/assets/img/logo.png")} alt="" />
                   </a>
                 </div>
                 <ul>
@@ -616,7 +616,7 @@ export default function Checkout() {
 
                 </div>
                 <div className="footer__copyright__payment">
-                  {/* <img src={require("../assets/img/payment-item.png")} alt="" /> */}
+                  <img src={require("../styles/assets/img/payment-item.png")} alt="" />
                 </div>
               </div>
             </div>
